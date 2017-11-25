@@ -30,4 +30,3 @@ void SetAllValues()
         "czemu nie",
         'b');
 }
-
