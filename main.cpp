@@ -53,7 +53,7 @@ void SetAllValues()
         "Random Access Memory ",
         "Nie ma poprawnej odpowiedzi",
         'a');
-       vq[5].setValues("Ktore z ponizszych zdan nie charakteryzuje pamieci ROM?",
+       q[5].setValues("Ktore z ponizszych zdan nie charakteryzuje pamieci ROM?",
         "ROM jest to pamiec tylko do odczytu.",
         "Dane zapisane w ROM sa ulotne i gina, gdy tylko zasilanie jest wylaczone.",
         "ROM umozliwia rozpoczecie pracy komputera, rozruch poszczegolnyc podzespolow i wspolprace mikroprocesora z pozostalymi czesciami zestawukomputerowego. ",
