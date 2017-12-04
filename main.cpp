@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Questions.h"
 #include <cstdlib>
 #include <ctime>
@@ -16,7 +15,7 @@ int main()
       srand(time(NULL));
       while(!GetAsyncKeyState(VK_DELETE))
       {
-          q[(std::rand() % 18 ) + 0].askQuestions();
+          q[(std::rand() % 105 ) + 0].askQuestions();
       }
 
     return 0;
@@ -58,7 +57,7 @@ void SetAllValues()
         "Dane zapisane w ROM sa ulotne i gina, gdy tylko zasilanie jest wylaczone.",
         "ROM umozliwia rozpoczecie pracy komputera, rozruch poszczegolnyc podzespolow i wspolprace mikroprocesora z pozostalymi czesciami zestawukomputerowego. ",
         "Zawartosc pamieci ROM nie zalezy od uzytkownika.",
-        'a');
+        'b');
        q[6].setValues("Ktore z ponizszych zdan nie charakteryzuje pamieci RAM?",
         "RAM to pamiec o dostepie swobodnym.",
         "Procesor wczytuje do niej program przed jego wykonaniem oraz przechowuje wyniki swoich obliczen.",
@@ -280,181 +279,383 @@ void SetAllValues()
         "systemowe odtworzenie ustawien",
         "domenowe nazewnictwo w systemie",
         "polaczenie z siecia",
-        'a');        
+        'a');
     q[42].setValues("Ktory z plikow jest biblioteka systemowa (biblioteka dolaczana dynamicznie)? ",
         "z rozszerzeniem INI",
         "z rozszerzeniem DLL",
         "z rozszerzeniem MPG ",
         "z rozszerzeniem VOB",
-        'b');        
+        'b');
     q[43].setValues("Ktora z ponizszych nazw plikow jest niepoprawna?",
         "plik_tekstowy.txt",
         "czy_to_plik?",
         "czy_to_plik.txt",
         "plik.tekstowy.txt",
-        'b');        
+        'b');
     q[44].setValues("'GIMNAZJUM zaszyfrowane 2 razy szyfrem cezara o wartociu klucza 13 w 26 literowym alfabecie to:'",
         "HJNOBAKVN ",
         "FHLMZYITL ",
         "BLAHGWHWD ",
         "GIMNAZJUM ",
-        'd');        
+        'd');
     q[45].setValues("Kto jest uwazany za tworce koncepcji funkcjonowania wspolczesnego komputera?",
         "George Lucas",
         "Steve Jobs",
         "John von Neumann",
         "Bill Gates ",
-        'c');        
+        'c');
     q[46].setValues("Jednostka uzywana do wyznaczania wydajnoci jednostki centralnej komputera, ktora okrela liczbe milionow instrukcji wykonywanych w ciagu jednej sekundy jest",
         "GB ",
         "GHz ",
         "MIPS ",
         "FLOPS ",
-        'c');        
+        'c');
     q[47].setValues("Co nie jest elementem wchodzacym w sklad komputera PC?",
         "RAM",
         "wobulator",
         "chipset",
         "karta graficzna",
-        'b');        
+        'b');
     q[48].setValues("Co zostanie wywietlone w komorce, do ktorej wpisano nastepujaca formule: =SUMA(1;3;7;10)",
         "blad – nie podano komorek do zsumowania",
         "4",
         "21",
         "blad – bledny zakres ",
-        'c');        
+        'c');
     q[49].setValues("Urzadzenie sluzace do zapisu i odczytu danych wykorzystujace nonik magnetyczny to: ",
         "pamiec SDRAM ",
         "karta pamieci SD",
         "twardy dysk HDD ",
         "twardy dysk SSD",
-        'c');        
+        'c');
     q[50].setValues("Zarzadzanie procesami, pamiecia i wejciem/wyjciem to:",
         "zadania wykonywane przez system operacyjny ",
         "zadania wykonywane przez pamiec cache ",
         "zadania wykonywane przez pamiec operacyjna",
         "zadania wykonywane przez oprogramowanie biurowe ",
-        'a');        
+        'a');
     q[51].setValues("Ktory z ponizszych jest adresem wersji 4 protokolu IP?",
         "b8:27:eb:95:29:8f",
         "8086:0212",
         "192.168.265.11",
         "192.168.12.11",
-        'd');        
+        'd');
     q[52].setValues("Plik tekstowy z programem zapisanym w pewnym jezyku programowania to: ",
         "kod maszynowy",
         "kod wynikowy",
         "kod wykonywalny",
         "kod zrodlowy ",
-        'd');        
+        'd');
     q[53].setValues("Co wykorzystuje do swego dzialania monitor LCD? ",
         "lampe kineskopowa",
         "ciekle krysztaly",
         "komory z plazma ",
         "laser polprzewodnikowy",
-        'b');        
+        'b');
     q[54].setValues("ROM to:",
-        "czas reakcji na zadanie odczytu z pamieci – skrot od Reaction Of Memory",
-        "pamiec stala komputera – skrot od Read Only Memory",
-        "iloc wolnego miejsca w pamieci – skrot od Room Of Memory ",
-        "pamiec operacyjna komputera – skrot od Random Only Memory ",
-        'b');        
-    q[55].setValues("W programie Microsoft Excel kombinacja klawiszy sluzaca do utworzenia nowego wiersza w tej samej komorce (wprowadzenia "entera" do komorki) to: ",
+        "czas reakcji na zadanie odczytu z pamieci - skrot od Reaction Of Memory",
+        "pamiec stala komputera - skrot od Read Only Memory",
+        "ilosc wolnego miejsca w pamieci - skrot od Room Of Memory ",
+        "pamiec operacyjna komputera - skrot od Random Only Memory ",
+        'b');
+    q[55].setValues("W programie Microsoft Excel kombinacja klawiszy sluzaca do utworzenia nowego wiersza w tej samej komorce (wprowadzenia entera do komorki) to: ",
         "Alt + Enter",
         "Ctrl + Enter",
         "Spacja ",
         "Shift + Enter",
-        'a');        
+        'a');
     q[56].setValues("Dyskowym systemem plikow nie jest: ",
         "NTFS",
         "EEPROM",
         "FAT32",
         "ext4",
-        'b');        
+        'b');
     q[57].setValues("Wartoc liczby 1101(3) po przeliczaniu na system dziesietny wynosi?",
         "37 ",
         "49",
         "13",
         "25 ",
-        'a');        
+        'a');
     q[58].setValues("Blok wejcia/wyjcia danych na schemacie blokowym algorytmu jest w ksztalcie: ",
         "kola",
         "owalu",
         "rownolegloboku ",
         "trojkata prostokatnego ",
-        'c');        
+        'c');
     q[59].setValues("Jak sie nazywa program lub urzadzenie komputerowe sluzace do zabezpieczenia polaczenia z Internetem poprzez blokowanie komunikacji w przypadku wykrycia prob wlamania?",
         "firewall",
         "antyspam ",
         "ad-blocker",
         "antywirus",
-        'a');        
+        'a');
     q[60].setValues("k = random (od 1 do 100)->n=in->while(true){if(n!=k){do{n=in}wihle(n>k)}else{wygrales break;}} ",
         "az poda liczbe n rowna k",
         "az poda liczbe k rowna n",
         "n razy ",
         "k razy ",
-        'a');        
+        'a');
     q[61].setValues("ile razy wypisze SUPER jeli a=21 b=2?---- a=in; b=in; if(a<=b){koniec}else{a--;while(a>5 || b<2){a=a/2; SUPER;} BRAWO",
         "2",
         "1",
         "3",
         "0",
-        'a');        
+        'a');
     q[62].setValues("Kod BCD umozliwia binarny zapis liczb:",
         "osemkowych",
         "dwojkowych ",
         "heksadecymalnych",
         "dziesietnych",
-        'd');        
+        'd');
     q[63].setValues("Co nie jest urzadzeniem wyjciowym komputera? ",
         "ploter",
         "drukarka",
         "skaner ",
         "monitor LCD",
-        'c');        
+        'c');
     q[64].setValues("W tym zadaniu byl algorytm ktorego nie chcialo mi sie robic",
         "ic stond",
         "dalej",
         "dobra odpowiedz",
         "no kliknij c",
-        'c');        
+        'c');
     q[65].setValues("Komorke sformatowano jako wartoc liczbowa z dwoma miejscami dziesietnymi. W jaki sposob zostanie wywietlona jej zawartoc, gdy wpiszemy tam 1,2? ",
         "1,2",
         "1/2",
         "1,20",
         "1",
-        'c');        
+        'c');
     q[66].setValues("k=3; p=1;  while(k>1){k=out; k--; p=p*k}  p=out",
         "3 2 2",
         "3 2 1",
         "3 1 1 ",
         "3 2 3",
-        'a');        
+        'a');
     q[67].setValues("Urzadzenie, ktore usprawnia wymiane danych pomiedzy procesorem a pamiecia RAM to:",
         "koprocesor ",
         "EPROM",
         "ROM",
         "cache",
-        'd');        
+        'd');
     q[68].setValues("Interfejs to:",
         "program sluzacy do przechwytywania prywatnych wiadomoci uzytkownikow portalu Facebook ",
         "proces ksztaltowania cyfrowego modelu twarzy za pomoca interpolacj",
         "urzadzenie pozwalajace na polaczenie ze soba dwoch innych urzadzen, ktore bez niego nie moga ze soba wspolpracowac ",
         "urzadzenie komputerowe do badania zjawiska interferencji fal elektromagnetycznych ",
-        'c');        
+        'c');
     q[69].setValues("Jaka wartoc bedzie miala liczba A1(16) po przeliczeniu na system binarny? ",
         "10100001",
         "10110000",
         "00011100",
         "10010001",
-        'a');        
-    q[70].setValues("Co bedzie wypisane w ponizszym arkuszu w komorce B6 po skopiowaniu do niej zawartoci komorki B2, w ktorej znajduje sie nastepujaca formula: =JEZELI(A2>A9;"tak";"nie") ",
+        'a');
+    q[70].setValues("Co bedzie wypisane w ponizszym arkuszu w komorce B6 po skopiowaniu do niej zawartoci komorki B2, w ktorej znajduje sie nastepujaca formula: =JEZELI(A2>A9;'tak';'nie') ",
         "0",
         "nie",
         "tak poprawna odp",
         "komorka pozostanie pusta",
         'c');
-
+    q[71].setValues("Ktory z ponizszych elementow jest elementem plyty glownej?",
+        "Chipset",
+        "Pendrive",
+        "Sterownik karty graficznej",
+        "Dysk twardy ",
+        'a');
+    q[72].setValues("Ktore z ponizszych twierdzen nie pasuje do definicji urzadzenia peryferyjnego? ",
+        "urzadzenie, ktore moze przesylac dane do komputera",
+        "urzadzenie, ktore moze pobierac dane z komputera",
+        "urzadzenie zewnetrzne polaczone z komputerem",
+        "urzadzenie w komputerze sluzace do zasilania innych urzadzen ",
+        'd');
+    q[73].setValues("Ktore z ponizszych zdan charakteryzuje procesor?",
+        "Procesor to prosty element elektroniczny.",
+        "Czestotliwosc taktowania procesora wyraza sie w voltach.",
+        "Procesor nazywany jest rowniez CPU, czyli centralna jednostka obliczeniowa.",
+        "Sposobu pracy procesora nie mozna definiowac za pomoca programu.",
+        'c');
+    q[74].setValues("Jaka jednostka szybkosci transmisji danych nie istnieje?",
+        "b/s",
+        "bps",
+        "baud",
+        "bss",
+        'd');
+    q[75].setValues("Co jest najmniejsza jednostka informacji?",
+        "bit",
+        "bajt",
+        "giga",
+        "mega",
+        'a');
+    q[76].setValues("Ktore z ponizszych zdan charakteryzuje pamieci typu ROM?",
+        "Dane zapisane w ROM sa ulotne i gina, gdy tylko zasilanie jest wylaczone.",
+        "ROM umozliwia rozpoczecie pracy komputera dzieki zapisanemu w niej programowi rozruchowemu.",
+        "ROM jest to pamiec tylko do zapisu.",
+        "Do pamieci ROM mozna dowolnie zapisywac dane.",
+        'b');
+    q[77].setValues("Pamieci nieulotne sa to pamieci, ktorych zawartosc nie ginie po wylaczeniu zasilania. Ktora z ponizszych nie jest pamiecia nieulotna:",
+        "RAM",
+        "ROM",
+        "Flash",
+        "EPROM",
+        'a');
+    q[78].setValues("Ktore z ponizszych zdan nie charakteryzuje pamieci RAM?",
+        "RAM to pamiec o dostepie swobodnym.",
+        "Do pamieci RAM mozna zapisywac dane, jak rowniez je odczytywac.",
+        "Procesor wczytuje do niej program przed wykonaniem oraz przechowuje wyniki swoich obliczen.",
+        "Pamiec ta przechowuje informacje nawet po wylaczeniu zasilania.",
+        'd');
+    q[79].setValues("System operacyjny to jest:",
+        "oprogramowanie podstawowe zapisane w pamieci Flash.",
+        "urzadzenie do przeprowadzania operacji matematycznych.",
+        "oprogramowanie zarzadzajace dzialaniem komputera ladowane z pamieci masowej.",
+        "oprogramowanie ladowane z pamieci masowej sluzace do pracy biurowej.",
+        'c');
+    q[80].setValues("Ktore z ponizszych zdan nie charakteryzuje systemu operacyjnego?",
+        "System operacyjny organizuje sposob rozmieszczania danych na dysku.",
+        "System operacyjny nie obsluguje urzadzen peryferyjnych.",
+        "System operacyjny nie zajmuje sie wylacznie edytowaniem dokumentow tekstowych.",
+        "System operacyjny steruje instalowaniem i uruchamianiem innych programow.",
+        'b');
+    q[81].setValues("Ktore z ponizszych zdan nie charakteryzuje sterownika?",
+        "Sterownik danego urzadzenia nalezy zainstalowac przed pierwszym uzyciem tego urzadzenia.",
+        "Sterownik dla wszystkich urzadzen jest ten sam.",
+        "Sterownik to program odpowiedzialny za prawidlowe funkcjonowanie m.in. karty graficznej.",
+        "Sterownik to program odpowiedzialny za prawidlowe funkcjonowanie urzadzen peryferyjnych komputera.",
+        'b');
+    q[82].setValues("Na bazie ktorego z systemow operacyjnych zostal przygotowany system GNU/Linux?",
+        "Lunix",
+        "Unix",
+        "Windows.",
+        "MS-DOS",
+        'b');
+    q[83].setValues("Ktory z ponizszych nie jest systemem operacyjnym?",
+        "Windows",
+        "CP/M",
+        "OM/G.",
+        "OS X",
+        'c');
+    q[84].setValues("Kto opracowal architekture wspolczesnego komputera (nazywana od jego nazwiska), w ktorej dane i kod programu przechowywane sa w tej samej pamieci?",
+        "John von Neumann",
+        "Alan Turing",
+        "Steve Jobs",
+        "Bill Gates",
+        'a');
+    q[85].setValues("Ile roznych wartosci moze byc przechowywanych w komorce pamieci o rozmiarze 4 bitow?",
+        "4",
+        "15",
+        "16",
+        "44",
+        'c');
+    q[86].setValues("Wartosc liczby 1011101(2) po przeliczaniu na system dziesietny wynosi?",
+        "85",
+        "87",
+        "93",
+        "95",
+        'c');
+    q[87].setValues("Jaka wartosc bedzie miala liczba 124(10) zapisana w systemie dziesietnym, po przeliczeniu na system binarny?",
+        "1111101(2)",
+        "1111100(2)",
+        "1011100(2)",
+        "0110100(2)",
+        'b');
+    q[88].setValues("Jaka wartosc bedzie miala liczba 124(10) zapisana w systemie dziesietnym, po przeliczeniu na system binarny?",
+        "1111101(2)",
+        "1111100(2)",
+        "1011100(2)",
+        "0110100(2)",
+        'b');
+    q[89].setValues("Ktora z ponizszych nazw jest nazwa edytora tekstu?",
+        "Microsoft Worder",
+        "WordPress",
+        "OpenOffice Writer",
+        "GNU Image Manipulation Program",
+        'c');
+    q[90].setValues("Ktory z ponizszych formatow, nie jest formatem edytora tekstu?",
+        "ODT",
+        "DOC",
+        "TXT",
+        "DNG",
+        'd');
+    q[91].setValues("Co oznacza pojecie „szeryf” w odniesieniu do kroju liter?",
+        "Szeryf to poprzeczne lub ukosne zakonczenia kresek glownych liter.",
+        "Szeryf to ozdobny ornament wokol liter w krojach pisma o stalej szerokosci.",
+        "Szeryf to krotkie kreski stosowane w wielu krojach pisma do zwiekszenia czytelnosci.",
+        "Szeryf to potoczna nazwa kroju liter, ktory jest stosowany w pismach sadowych.",
+        'a');
+    q[92].setValues("Ktore z ponizszych zdan nie charakteryzuje naglowka w dokumencie tekstowym?",
+        "Naglowek jest to czesc dokumentu tekstowego znajdujaca sie w gornej czesci strony.",
+        "Teksty umieszczone w naglowku ukazuja sie na kolejnych stronach sekcji dokumentu.",
+        "W naglowku mozna umieszczac wylacznie tekst.",
+        "W naglowku mozna umieszczac zarowno tekst, jak i grafike.",
+        'c');
+    q[93].setValues("Ktore z ponizszych zdan nie charakteryzuje tabulacji w edytorze tekstu?",
+        "Tabulacja to mechanizm wbudowany w edytor tekstu, pozwalajacy wplywac na polozenie fragmentu tekstu w wierszu.",
+        "Tabulacja to mechanizm zewnetrzny edytora tekstu, pozwalajacy wplywac na polozenie tekstu w systemie plikow.",
+        "Mechanizm tabulacji nie zadziala prawidlowo, jezeli liczba znacznikow na linijce nie bedzie rowna liczbie znakow tabulacji w wierszu.",
+        "Mechanizm tabulacji zadziala prawidlowo, jezeli liczba znacznikow na linijce bedzie rowna liczbie znakow tabulacji w wierszu.",
+        'b');
+    q[94].setValues("Jak nazywa sie czesc dokumentu tekstowego, w obrebie ktorego mozna stosowac odrebne formatowanie?",
+        "Sesja.",
+        "Sekcja.",
+        "Obszar.",
+        "Blok.",
+        'b');
+    q[95].setValues("Ktore z ponizszych zdan nie charakteryzuje korespondencji seryjnej w edytorze tekstu",
+        "Korespondencja seryjna to technika tworzenia w edytorze tekstu jednobrzmiacych dokumentow, rozniacych sie jedynie zawartoscia kluczowych pol dokumentu, ktore sa automatycznie wypelniane trescia pol pobieranych z zewnetrznej bazy danych",
+        "Korespondencja seryjna moze sluzyc do tworzenia np. listow, etykiet czy kopert",
+        "Aby skorzystac z korespondencji seryjnej w dokumencie tekstowym nalezy najpierw scalic dokument glowny ze zrodlem danych, nastepnie przygotowac tresc dokumentu glownego, a na koncu stworzyc zrodlo danych.",
+        "Korespondencja seryjna korzysta z zewnetrznego zrodla danych.",
+        'c');
+    q[96].setValues("Ktory z ponizszych programow nie jest arkuszem kalkulacyjnym?",
+        "Gnumeric",
+        "Microsoft Excel",
+        "OpenOffice Calc",
+        "iCal",
+        'd');
+    q[97].setValues("Ktory z ponizszych formatow, nie jest formatem arkusza kalkulacyjnego?",
+        "XLS",
+        "ODT",
+        "ODS",
+        "SXC",
+        'b');
+    q[98].setValues("Ktore z ponizszych zdan nie charakteryzuje komorki arkusza kalkulacyjnego?",
+        "Adres komorki to numer kolumny i litera wiersza.",
+        "Adres danej komorki nie moze byc zmieniony.",
+        "Komorka jest podstawowym elementem arkusza kalkulacyjnego.",
+        "Kazda komorka w arkuszu ma swoj wlasny, niepowtarzalny adres.",
+        'a');
+    q[99].setValues("Adres bezwzgledny dla komorki A1 to:",
+        "A1",
+        "$A1",
+        "$A$1",
+        "A$1",
+        'c');
+    q[100].setValues("Jak w arkuszu kalkulacyjnym nazywa sie adresowanie, ktore pozwala arkuszowi na automatyczna zmiane adresow komorek wystepujacych w formule kopiowanej do innych miejsc arkusza?",
+        "Adresowanie bezwzgledne.",
+        "Adresowanie wzgledne.",
+        "Adresowanie bezposrednie.",
+        "Adresowanie automatyczne.",
+        'b');
+    q[101].setValues("Jaka formule nalezy wpisac, aby policzyc sume zawartosci komorek od A1 do A12?",
+        "Suma(A1:A12)",
+        "=Suma(A1:A12)",
+        "Suma(A1-A12) ",
+        "=Suma(A1-A12)",
+        'b');
+    q[102].setValues("Aby automatycznie wyliczyc dodatek stazowy, uzalezniony od ilosci przepracowanych lat nalezy zastosowac:",
+        "Funkcje JEzELI",
+        "Funkcje LICZ",
+        "Funkcje LICZ.JEzELI",
+        "Funkcje LICZ.PUSTE",
+        'a');
+    q[103].setValues("Zakres komorek to obszar obejmujacy prostokatny zbior komorek lezacych obok siebie. W jaki sposob okresla sie taki zakres?",
+        "A1+A12",
+        "A1-A12",
+        "A1*A12",
+        "A1:A12",
+        'd');
+    q[104].setValues("Ktora z ponizszych nazw jest nazwa edytora tekstu?",
+        "Funkcje ZNAJDz",
+        "Funkcje LICZ",
+        "Funkcje LICZ.JEzELI",
+        "Funkcje LICZ.PUSTE",
+        'c');
 }
-
