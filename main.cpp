@@ -6,7 +6,7 @@
 
 
 
-Questions q[100]; //[100] = amount of questions q = question
+Questions q[400]; //[400] = amount of questions q = question
 
 void SetAllValues();
 
@@ -275,7 +275,186 @@ void SetAllValues()
         "Funkcje suma.jezeli ",
         "-----brak---",
         'b');
-
+    q[41].setValues("Domain Name System (DNS) jest to usluga, ktora umozliwia",
+        "tlumaczenie adresow internetowych na adresy zrozumiale przez siec komputerowa ",
+        "systemowe odtworzenie ustawien",
+        "domenowe nazewnictwo w systemie",
+        "polaczenie z siecia",
+        'a');        
+    q[42].setValues("Ktory z plikow jest biblioteka systemowa (biblioteka dolaczana dynamicznie)? ",
+        "z rozszerzeniem INI",
+        "z rozszerzeniem DLL",
+        "z rozszerzeniem MPG ",
+        "z rozszerzeniem VOB",
+        'b');        
+    q[43].setValues("Ktora z ponizszych nazw plikow jest niepoprawna?",
+        "plik_tekstowy.txt",
+        "czy_to_plik?",
+        "czy_to_plik.txt",
+        "plik.tekstowy.txt",
+        'b');        
+    q[44].setValues("'GIMNAZJUM zaszyfrowane 2 razy szyfrem cezara o wartociu klucza 13 w 26 literowym alfabecie to:'",
+        "HJNOBAKVN ",
+        "FHLMZYITL ",
+        "BLAHGWHWD ",
+        "GIMNAZJUM ",
+        'd');        
+    q[45].setValues("Kto jest uwazany za tworce koncepcji funkcjonowania wspolczesnego komputera?",
+        "George Lucas",
+        "Steve Jobs",
+        "John von Neumann",
+        "Bill Gates ",
+        'c');        
+    q[46].setValues("Jednostka uzywana do wyznaczania wydajnoci jednostki centralnej komputera, ktora okrela liczbe milionow instrukcji wykonywanych w ciagu jednej sekundy jest",
+        "GB ",
+        "GHz ",
+        "MIPS ",
+        "FLOPS ",
+        'c');        
+    q[47].setValues("Co nie jest elementem wchodzacym w sklad komputera PC?",
+        "RAM",
+        "wobulator",
+        "chipset",
+        "karta graficzna",
+        'b');        
+    q[48].setValues("Co zostanie wywietlone w komorce, do ktorej wpisano nastepujaca formule: =SUMA(1;3;7;10)",
+        "blad – nie podano komorek do zsumowania",
+        "4",
+        "21",
+        "blad – bledny zakres ",
+        'c');        
+    q[49].setValues("Urzadzenie sluzace do zapisu i odczytu danych wykorzystujace nonik magnetyczny to: ",
+        "pamiec SDRAM ",
+        "karta pamieci SD",
+        "twardy dysk HDD ",
+        "twardy dysk SSD",
+        'c');        
+    q[50].setValues("Zarzadzanie procesami, pamiecia i wejciem/wyjciem to:",
+        "zadania wykonywane przez system operacyjny ",
+        "zadania wykonywane przez pamiec cache ",
+        "zadania wykonywane przez pamiec operacyjna",
+        "zadania wykonywane przez oprogramowanie biurowe ",
+        'a');        
+    q[51].setValues("Ktory z ponizszych jest adresem wersji 4 protokolu IP?",
+        "b8:27:eb:95:29:8f",
+        "8086:0212",
+        "192.168.265.11",
+        "192.168.12.11",
+        'd');        
+    q[52].setValues("Plik tekstowy z programem zapisanym w pewnym jezyku programowania to: ",
+        "kod maszynowy",
+        "kod wynikowy",
+        "kod wykonywalny",
+        "kod zrodlowy ",
+        'd');        
+    q[53].setValues("Co wykorzystuje do swego dzialania monitor LCD? ",
+        "lampe kineskopowa",
+        "ciekle krysztaly",
+        "komory z plazma ",
+        "laser polprzewodnikowy",
+        'b');        
+    q[54].setValues("ROM to:",
+        "czas reakcji na zadanie odczytu z pamieci – skrot od Reaction Of Memory",
+        "pamiec stala komputera – skrot od Read Only Memory",
+        "iloc wolnego miejsca w pamieci – skrot od Room Of Memory ",
+        "pamiec operacyjna komputera – skrot od Random Only Memory ",
+        'b');        
+    q[55].setValues("W programie Microsoft Excel kombinacja klawiszy sluzaca do utworzenia nowego wiersza w tej samej komorce (wprowadzenia "entera" do komorki) to: ",
+        "Alt + Enter",
+        "Ctrl + Enter",
+        "Spacja ",
+        "Shift + Enter",
+        'a');        
+    q[56].setValues("Dyskowym systemem plikow nie jest: ",
+        "NTFS",
+        "EEPROM",
+        "FAT32",
+        "ext4",
+        'b');        
+    q[57].setValues("Wartoc liczby 1101(3) po przeliczaniu na system dziesietny wynosi?",
+        "37 ",
+        "49",
+        "13",
+        "25 ",
+        'a');        
+    q[58].setValues("Blok wejcia/wyjcia danych na schemacie blokowym algorytmu jest w ksztalcie: ",
+        "kola",
+        "owalu",
+        "rownolegloboku ",
+        "trojkata prostokatnego ",
+        'c');        
+    q[59].setValues("Jak sie nazywa program lub urzadzenie komputerowe sluzace do zabezpieczenia polaczenia z Internetem poprzez blokowanie komunikacji w przypadku wykrycia prob wlamania?",
+        "firewall",
+        "antyspam ",
+        "ad-blocker",
+        "antywirus",
+        'a');        
+    q[60].setValues("k = random (od 1 do 100)->n=in->while(true){if(n!=k){do{n=in}wihle(n>k)}else{wygrales break;}} ",
+        "az poda liczbe n rowna k",
+        "az poda liczbe k rowna n",
+        "n razy ",
+        "k razy ",
+        'a');        
+    q[61].setValues("ile razy wypisze SUPER jeli a=21 b=2?---- a=in; b=in; if(a<=b){koniec}else{a--;while(a>5 || b<2){a=a/2; SUPER;} BRAWO",
+        "2",
+        "1",
+        "3",
+        "0",
+        'a');        
+    q[62].setValues("Kod BCD umozliwia binarny zapis liczb:",
+        "osemkowych",
+        "dwojkowych ",
+        "heksadecymalnych",
+        "dziesietnych",
+        'd');        
+    q[63].setValues("Co nie jest urzadzeniem wyjciowym komputera? ",
+        "ploter",
+        "drukarka",
+        "skaner ",
+        "monitor LCD",
+        'c');        
+    q[64].setValues("W tym zadaniu byl algorytm ktorego nie chcialo mi sie robic",
+        "ic stond",
+        "dalej",
+        "dobra odpowiedz",
+        "no kliknij c",
+        'c');        
+    q[65].setValues("Komorke sformatowano jako wartoc liczbowa z dwoma miejscami dziesietnymi. W jaki sposob zostanie wywietlona jej zawartoc, gdy wpiszemy tam 1,2? ",
+        "1,2",
+        "1/2",
+        "1,20",
+        "1",
+        'c');        
+    q[66].setValues("k=3; p=1;  while(k>1){k=out; k--; p=p*k}  p=out",
+        "3 2 2",
+        "3 2 1",
+        "3 1 1 ",
+        "3 2 3",
+        'a');        
+    q[67].setValues("Urzadzenie, ktore usprawnia wymiane danych pomiedzy procesorem a pamiecia RAM to:",
+        "koprocesor ",
+        "EPROM",
+        "ROM",
+        "cache",
+        'd');        
+    q[68].setValues("Interfejs to:",
+        "program sluzacy do przechwytywania prywatnych wiadomoci uzytkownikow portalu Facebook ",
+        "proces ksztaltowania cyfrowego modelu twarzy za pomoca interpolacj",
+        "urzadzenie pozwalajace na polaczenie ze soba dwoch innych urzadzen, ktore bez niego nie moga ze soba wspolpracowac ",
+        "urzadzenie komputerowe do badania zjawiska interferencji fal elektromagnetycznych ",
+        'c');        
+    q[69].setValues("Jaka wartoc bedzie miala liczba A1(16) po przeliczeniu na system binarny? ",
+        "10100001",
+        "10110000",
+        "00011100",
+        "10010001",
+        'a');        
+    q[70].setValues("Co bedzie wypisane w ponizszym arkuszu w komorce B6 po skopiowaniu do niej zawartoci komorki B2, w ktorej znajduje sie nastepujaca formula: =JEZELI(A2>A9;"tak";"nie") ",
+        "0",
+        "nie",
+        "tak poprawna odp",
+        "komorka pozostanie pusta",
+        'c');
 
 }
 
