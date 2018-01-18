@@ -855,7 +855,7 @@ void SetAllValues()
         "Paul Baran",
         "Steve Jobs ",
         "Mark Zuckerberg",
-        'c');
+        'b');
     q[138].setValues("Ktore z ponizszych nie jest protokolem internetowym?",
         "HTTP",
         "FTP",
