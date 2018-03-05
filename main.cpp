@@ -16,7 +16,7 @@ int main()
 	srand(time(NULL));
 	for (;;)
 	{
-		q[188].askQuestions();
+		q[rand() % 188 + 1].askQuestions();
 	}
 	std::cin.get();
 	std::cin.get();
