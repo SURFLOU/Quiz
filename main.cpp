@@ -12,9 +12,10 @@ void SetAllValues();
 
 int main()
 {
+	bool papaj = true;
 	SetAllValues();
 	srand(time(NULL));
-	for (;;)
+	while(papaj)
 	{
 		q[rand() % 188 + 1].askQuestions();
 	}
