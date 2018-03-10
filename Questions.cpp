@@ -83,7 +83,12 @@ void Questions::AskSingleQuestions()
 
 void Questions::AskWholeTest()
 {
-	for (int i = 0; i <= 29; i++)
+	std::cout << "How many questions would you like to do: ";
+	int Amount;
+	std::cin >> Amount;
+	system("CLS");
+
+	for (int i = 0; i <= Amount-1; i++)
 	{
 		srand(time(NULL));
 		RandomNumber = std::rand() % AmountOfQuestions + 1;
@@ -113,8 +118,8 @@ void Questions::AskWholeTest()
 			system("CLS");
 		}
 	}
-	std::cout << "Your Total Score is " << Score << " out of 30!" << std::endl;
-	std::cout << "Its exactly: " << (Score * 100) / 30 << " percentage" << std::endl;
+	std::cout << "Your Total Score is " << Score << " out of "<< Amount << "!" << std::endl;
+	std::cout << "Its exactly: " << (Score * 100) / Amount << " percentage" << std::endl;
 	std::cin.get();
 	std::cin.get();
 }
