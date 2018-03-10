@@ -1,34 +1,42 @@
-#ifndef QUESTIONS_H
-#define QUESTIONS_H
-#include <iostream>
+#pragma once
+#include <fstream>
 
 
 class Questions
 {
-    public:
-        Questions();
-        ~Questions();
+public:
+	Questions();
+	~Questions();
 
 
-        void setValues(std::string q, std::string a1, std::string a2, std::string a3, std::string a4, char ca);
-        void askQuestions();
+protected:	
+	std::fstream quiz;
 
+protected:
+	int LineNumber = 1;
+	int QuestionNo = 0;
+	int static const AmountOfQuestions = 188;
+	int RandomNumber;
+	int Score;
 
-    protected:
+protected:
+	std::string Text[AmountOfQuestions];
+	std::string ChoiceA[AmountOfQuestions];
+	std::string ChoiceB[AmountOfQuestions];
+	std::string ChoiceC[AmountOfQuestions];
+	std::string ChoiceD[AmountOfQuestions];
+	std::string CorrectAnswer[AmountOfQuestions];
+	std::string Answer;
+	std::string line;
 
-        std::string questionText;
-        std::string Option1;
-        std::string Option2;
-        std::string Option3;
-        std::string Option4;
+public:
+	void OpenFile();
+	void AssignVariables();
+	void ChooseTest();
+	void AskSingleQuestions();
+	void AskWholeTest();
 
-        char correctAnswer;
-        int questionScore;
-        char guess;
-
-    private:
 
 
 };
 
-#endif // QUESTIONS_H
