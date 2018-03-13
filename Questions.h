@@ -11,32 +11,34 @@ public:
 
 protected:	
 	std::fstream quiz;
+	std::fstream quiz2;
 
 protected:
 	int LineNumber = 1;
 	int QuestionNo = 0;
-	int static const AmountOfQuestions = 188;
+	int static const AmountOfQuestionsA = 188;
+	int static const AmountOfQuestionsB = 50;
 	int RandomNumber;
 	int Score;
+	int Choice;
 
 protected:
-	std::string Text[AmountOfQuestions];
-	std::string ChoiceA[AmountOfQuestions];
-	std::string ChoiceB[AmountOfQuestions];
-	std::string ChoiceC[AmountOfQuestions];
-	std::string ChoiceD[AmountOfQuestions];
-	std::string CorrectAnswer[AmountOfQuestions];
+	std::string aText[AmountOfQuestionsA], bText[AmountOfQuestionsB];
+	std::string aChoiceA[AmountOfQuestionsA], bChoiceA[AmountOfQuestionsB];
+	std::string aChoiceB[AmountOfQuestionsA], bChoiceB[AmountOfQuestionsB];
+	std::string aChoiceC[AmountOfQuestionsA], bChoiceC[AmountOfQuestionsB];
+	std::string aChoiceD[AmountOfQuestionsA], bChoiceD[AmountOfQuestionsB];
+	std::string aCorrectAnswer[AmountOfQuestionsA], bCorrectAnswer[AmountOfQuestionsB];
 	std::string Answer;
 	std::string line;
 
 public:
-	void OpenFile();
+	void OpenFiles();
 	void AssignVariables();
 	void ChooseTest();
 	void AskSingleQuestions();
 	void AskWholeTest();
-
-
+	void MakeChoice();
 
 };
 
