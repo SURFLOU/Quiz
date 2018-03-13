@@ -1,0 +1,300 @@
+Operator przypisania to operator ktory:
+powoduje ze zmienna zostanie przeniesiona na dysk
+przypisuje zmiennej wartosc
+powoduje wykonanie petli w programie
+przypisuje zmiennej nazwe
+b
+MBR Master Boot Record to:
+Struktura zapisana w pierwszym sektorze dysku twardego min zawierajaca program rozruchowy
+Glowny proces w systemie operacyjnym
+Glowny kontroler pamieci masowej
+Glowny sterownik pamieci operacyjnej na plycie glownej komputera
+a
+Gdzie powstal pierwszy graficzny interfejs uzytkownika?
+W laboratoriach firmy Apple
+W firmie Microsoft
+W laboratorium PARC firmy Xerox
+W laboratoriach firmy Samsung
+c
+Ktore z ponizszych jest protokolem internetowym?
+CSS
+HTTP
+HTML
+XML
+b
+Jakiej pamieci nie znajdziemy w systemie komputerowym:
+pamieci operacyjnej
+pamieci nieulotnej
+pamieci absolutnej
+pamieci masowej
+c
+Co otrzymamy po wykonaniu ponizszego pseudokodu:\n1Pobierz pierwszy element tablicy i podstaw go pod x\n2Pobierz nastepny element tablicy\n3Jezeli nastepny element tablicy jest mniejszy niz x podstaw jego wartosc za x\n4Jezeli nie ma wiecej elementow w tablicy zakoncz w przeciwnym przypadku wroc do punktu 2
+wartosc minimalna elementow tablicy
+wartosc srednia elementow tablicy
+liczbe elementow tablicy
+wartosc maksymalna elementow tablicy
+a
+Ktore z ponizszych zdan jest prawdziwe?
+kompresja stratna i bezstratna to to samo
+kompresja stratna nie sluzy do redukcji liczby bitow potrzebnych do reprezentacji grafiki lub dzwieku
+kompresja bezstratna gwarantuje odtworzenie pierwotnej jakosci grafiki lub dzwieku
+istnieje jeden uniwersalny algorytm kompresji stratne
+c
+Klaster komputerowy to:
+Program komputerowy pozwalajacy podzielic dane na klasy
+Komputer posiadajacy wysokiej klasy oprogramowanie
+Program komputerowy do zarzadzania zbiorami filatelistycznymi i numizmatycznymi
+Grupa polaczonych jednostek komputerowych ktore wspolpracuja ze soba
+d
+Ktory z ponizszych znacznikow jest poprawnym hiperlaczem do strony wwwbialystokpl?
+<A HREF=http://wwwbialystokpl/ tez poprawna jakby co 2 sie nie dalo>
+<A HREF=wwwbialystokpl>
+<A SRC=http://wwwbialystokpl/>
+<A SRC=wwwbialystokpl>
+b
+W systemie plikow nie wystepuje:
+teczka
+plik
+katalog
+folder
+a
+W schemacie blokowym blok wejscia-wyjscia sluzy do:
+wprowadzania danych wejsciowych i do wyprowadzania wynikow
+rozpoczecia algorytmu
+blokowania wejscia i wyjscia
+okreslania warunku
+a
+Kto jest uwazany za tworce WWW World Wide Web?
+Linus Torvalds
+Steve Jobs
+Tim Berners-Lee
+Bill Gates
+c
+Model przestrzeni barw uwzgledniajacy mieszanie trzech trzech wiazek swiatla czerwonej zielonej niebieskiej to:
+CMYK
+HSL
+RGB
+HSV
+c
+Polecenie ping sluzy do:
+przeslania pliku z wykorzystaniem protokolu ping
+sprawdzenia polaczenia z podanym adresem internetowym
+wyznaczania trasy alternatywnej
+odnalezienia urzadzen obslugujacych protokol ping
+b
+inkzwhilek!=z{ifk>zdok=k-zelsez=z-k}outk
+Algorytm obliczania sumy
+Algorytm wyznaczania najwiekszego wspolnego dzielnika
+Algorytm wyznaczania roznic
+Algorytm wyznaczania wiekszej liczby
+b
+Miara wydajnosci jednostki centralnej CPU komputera ktora okresla liczbe milionow operacji\nstaloprzecinkowych wykonywanych w ciagu sekundy to:
+GHz
+MIPS
+FLOPS
+bps
+b
+Protokol IP wersji 6:
+nie ma jeszcze tej wersji protokolu - moze bedzie w przyszlosci
+jest poprzednikiem stosowanego obecnie IP wersji 8
+pozwala na wyjatkowo szybka transmisje dzwieku w telefonach komorkowych i tylko dzwieku
+pozwala zaadresowac znacznie wieksza liczbe urzadzen niz IP w wersji 4
+d
+Na ponizszym rysunku przedstawiono schemat blokowy algorytmu obliczania funkcji silnia n! gdzie\nn! = 1 � 2 � 3 �  � n-1 � n silnia jest to iloczyn kolejnych liczb naturalnych mniejszych badz rownych\nn Co powinno byc wpisane w pusty element schematu?
+dobra odp
+zla odp
+dobra odp to a
+zadanie bylo proste nie chcialo mi sie go pisac
+a
+Siec komputerowa oparta o standard Bluetooth 80215 to siec:
+LAN
+SAN
+PAN
+MAN
+c
+Jedno slowo to 2 bajty Ile slow miesci sie w kibibajcie?
+512
+1000
+500
+1024
+a
+Interfejsem do podlaczania dysku twardego nie jest:
+DVI
+mSATA
+SATA
+PCIe
+a
+Ktory z ponizszych zapisow przedstawia poprawny znacznik HTML?
+BODY
+<BODY>
+{BODY}
+BODY}
+b
+ENIAC - jeden z pierwszych komputerow elektronicznych wykorzystywal jak elementy czynne:
+lampy elektronowe
+uklady scalone
+zarowki
+tranzystory
+a
+arkusz excela\n\tA\n1\t1\n2\t2\n3\t3\n4\t4\n5\nJaka bedzie zawartosc komorki A5 po wpisaniu formuly:\n=SUMAA1:A1:A2:A2:A3:A3:A4:A4
+10
+blad
+20
+0
+a
+Jezyk programowania to:
+zbior slow ktore moze wypowiedziec komputer
+nieusystematyzowany sposob przekazywania komputerowi polecen do wykonania
+analiza i modelowanie obiektow i ukladow roznej natury
+usystematyzowany sposob przekazywania komputerowi polecen do wykonania
+d
+Ktory z ponizszych interfejsow video nie jest interfejsem cyfrowym?
+HDMI
+Display Port
+DVI
+D-SUB VGA
+d
+Algorytm babelkowy sortowania:
+jest dosc wolny ale prosty do napisania
+dziala tylko na liczbach calkowitych
+jest jednym z szybszych algorytmow sortowania
+nie zawsze zapewnia poprawne sortowanie ale przewaznie dziala dobrze
+a
+Tworca jezyka C to:
+Steve Jobs
+Dennis Ritchie
+Bill Gates
+Ken Thompsontworca unixa i jezyka B
+b
+Symbol F2 mozna spotkac w wielu sytuacjach zwiazanych z informatyka W ktorym z ponizszych\nprzypadkow z nim sie nie spotkamy:
+adres urzadzenia w sieci IPv4
+wartosc liczby w systemie szesnastkowym
+symbol klawisza funkcyjnego
+adres komorki w arkuszu
+a
+<table>\n <tr>\n <th>1</th> \n<th>2</th>\n <th>3</th>\n </tr>\n <tr>\n <td>1</td>\n <td>2</td> \n<td>3</td> \n</tr> \n</table>\n Powyzszy kod w jezyku HTML stworzy tabele skladajaca sie z :
+3 wierszy i 3 kolumn
+3 wierszy i 2 kolumn
+2 wierszy i 2 kolumn
+2 wierszy i 3 kolumn
+d
+Ktory z przedstawionych ponizej jest poprawnym znacznikiem jezyka HTML?
+HTML
+HTML
+{HTML}
+<HTML>
+d
+Co zwraca formula =FRAGMENTTEKSTUB1432 w arkuszu kalkulacyjnym?
+dodaje 2 znaki z tekstu znajdujacego sie w komorce B14 zaczynajac od 3 znaku
+zwraca 2 znaki z tekstu znajdujacego sie w komorce B14 zaczynajac od 3 znaku
+usuwa 2 znaki z tekstu znajdujacego sie w komorce B14 zaczynajac od 3 znaku
+zwraca 3 znaki z tekstu znajdujacego sie w komorce B14 zaczynajac od 2 znaku
+b
+W jaki sposob w dokumencie HTML tworzy sie znaczniki zamykajace?
+za pomoca slowa kluczowego END
+poprzez dodanie znaku wykrzyknika ! po nazwie znacznika
+poprzez dodanie znaku wykrzyknika ! przed nazwa znacznika
+poprzez dodanie znaku ukosnika / przed nazwa znacznika
+d
+Co to jest kontener multimedialny?
+rodzaj systemu operacyjnego do tworzenia multimediow
+program sluzacy do kodowania plikow audio lub video
+format pliku komputerowego uzywanego do przechowywania danych takich jak sygnal minaudio lub video
+urzadzenie sluzace do przechowywania plikow audio/video
+c
+Ktory z ponizszych kodow dwojkowych umozliwia zapis liczby calkowitej ze znakiem ?
+kod uzupelnien do 2
+kod Johnsona
+kod Graya
+naturalny kod binarny
+a
+Ktore z ponizszych nie jest konieczne przy konfiguracji karty sieciowej aby moc polaczyc sie z Internetem ?
+maska podsieci
+adres IP komputera
+adres MAC
+adres bramy domyslnej
+c
+Palmtop to:
+miniaturowy komputer mieszczacy sie w dloni
+komputer w obudowie wykonanej z drewna palmowego
+komputer umozliwiajacy ogladanie telewizji w standardzie nadawania PAL
+jeden z typow dotykowych paneli sterujacych rodzaj touchpada
+a
+Ktora z ponizszych aplikacji sluzy do odtwarzania plikow multimedialnych?
+AVR
+MMC
+VOB
+VLC
+d
+Komputer ma przypisany adres IPv4 postaci 192168632 z maska podsieci 255255255240Ktory z ponizszych adresow bedzie poprawnym adresem bramy domyslnej dla tego komputera ?
+19216801
+192168641
+192168632
+192168631
+d
+Z jaka organizacja zwiazane jest powstanie sieci WWW wraz z jego tworca sir Timothy Berners - Lee ?
+Naukowa i Akademicka Siecia Komputerowa NASK
+Instytutem Technologicznym w Massachusetts MIT
+Instytutem Inzynierow Elektrykow i Elektronikow IEEE
+Europejska Organizacja Badan Jadrowych CERN
+d
+Ktora z ponizszych konstrukcji jezyka HTML pozwoli wstawic obrazek?
+<src img=piesjpg alt=Piesek>
+<img file=piesjpg alt=Piesek>
+<img src=piesjpg alt=Piesek>
+<img img=piesjpg alt=Piesek>
+c
+Ktory z ponizszych algorytmow nie jest algorytmem sortowania?
+sortowanie babelkowe
+sortowanie kubelkowe
+sortowanie pudelkowe
+sortowanie przez wstawianie
+c
+Klaster komputerowy to:
+inaczej klasyczny komputer PC
+program komputerowy pozwalajacy podzielic dane na klasy
+komputer posiadajacy wysokiej klasy oprogramowani
+grupa polaczonych jednostek komputerowych ktore wspolpracuja ze soba
+d
+System operacyjny to:
+program komputerowy ktory wykonuje rozmaite operacje na danych uzytkownika
+podstawowy element na plycie glownej komputera
+oprogramowanie ktore zarzadza udostepnianiem zasobow komputera aplikacjom
+program komputerowy wspomagajacy lekarzy przy wykonywaniu operacji chirurgicznych
+c
+Ktore znaczniki HTML okreslaja strukture dokumentu definiujac naglowek i cialo dokumentu ?
+H1 i P
+HEADER i SECTION
+HTML i TEXT
+HEAD i BODY
+d
+Jeden lub wiecej wierszy tekstu stanowiacych calosc logiczna zakonczony znakiem nowego wierszaenter to:
+strona
+akapit
+rozdzial
+sekcja
+b
+Pewien tekst zaszyfrowano za pomoca znanego szyfru podstawieniowego Wiadomo ze trzecia i dziewiata litera tekstu oryginalnego to ATresc szyfrogramu to : XUJSNUXMJJaki jest tekst oryginalnyzakladajac ze uzyto alfabetu lacinskiego ?
+OLAJELODA
+ALAMALODA
+ALAMAKOTA
+OLAMAKOTA
+a
+Wartosc liczby zapisanej w systemie szesnastkowym A6B16 wynosi:
+1010011010112
+416526
+266810
+51548
+a
+Nazwa modem wywodzi sie z dwoch slow angielskich zwiazanych z procesem komunikacjiJakie to slowa ?
+coding i decoding
+modulation i demodulation
+modern maniacs
+molecule deminimizing
+b
+Ktore z ponizszych stwierdzen nie opisuje systemu nazw domenowych DNS?
+DNS pozwala na zamiane nazwy domenowej na adres IP
+fm to domena najwyzszego poziomu nie przypisana zadnemu panstwu lecz wylacznie stacjom radiowym
+pl to domena najwyzszego poziomu przypisana do Polski
+DNS pozwala na zamiane adresu IP na nazwe domenowa
+b
