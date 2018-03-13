@@ -4,7 +4,8 @@ Questions Question;
 
 int main()
 {
-	Question.OpenFile();
+	Question.MakeChoice();
+	Question.OpenFiles();
 	Question.AssignVariables();
 	Question.ChooseTest();
 
