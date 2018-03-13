@@ -10,74 +10,173 @@ Questions::Questions()
 
 }
 
-void Questions::OpenFile()
+void Questions::MakeChoice()
 {
-	quiz.open("quiz.txt", std::ios::in);
-	if (quiz.good() == false)
+	std::cout << "Do you want to do exercises from EVERY ETAP or ETAP WOJEWODZKI: " << std::endl;
+	std::cout << "1. EVERY ETAP" << std::endl;
+	std::cout << "2. ETAP WOJEWODZKI" << std::endl;
+	std::cout << "Choice: ";
+	std::cin >> Choice;
+	system("CLS");
+}
+
+void Questions::OpenFiles()
+{
+	switch (Choice)
 	{
-		std::cout << "Failed to load file";
-		Sleep(2000);
-		exit(0);
+	case 1:
+	{
+		quiz.open("quiz.txt", std::ios::in);
+		if (quiz.good() == false)
+		{
+			std::cout << "Failed to load file";
+			Sleep(2000);
+			exit(0);
+		}
+		break;
 	}
-	
+	case 2:
+	{
+		quiz2.open("quiz2.txt", std::ios::in);
+		if (quiz.good() == false)
+		{
+			std::cout << "Failed to load file";
+			Sleep(2000);
+			exit(0);
+		}
+		break;
+	}
+	}
 }
 
 void Questions::AssignVariables()
 {
-	while (std::getline(quiz, line))
+	switch (Choice)
 	{
-		switch (LineNumber) //LineNumber=1;
+	case 1:
+	{
+		while (std::getline(quiz, line))
 		{
-		case 1: Text[QuestionNo] = line; break;
-		case 2: ChoiceA[QuestionNo] = line; break;
-		case 3: ChoiceB[QuestionNo] = line; break;
-		case 4: ChoiceC[QuestionNo] = line; break;
-		case 5: ChoiceD[QuestionNo] = line; break;
-		case 6: CorrectAnswer[QuestionNo] = line; break;
-		}
-		if (LineNumber == 6)
-		{
-			LineNumber = 0;
-			QuestionNo++;
-		}
+			switch (LineNumber) //LineNumber=1;
+			{
+			case 1: aText[QuestionNo] = line; break;
+			case 2: aChoiceA[QuestionNo] = line; break;
+			case 3: aChoiceB[QuestionNo] = line; break;
+			case 4: aChoiceC[QuestionNo] = line; break;
+			case 5: aChoiceD[QuestionNo] = line; break;
+			case 6: aCorrectAnswer[QuestionNo] = line; break;
+			}
+			if (LineNumber == 6)
+			{
+				LineNumber = 0;
+				QuestionNo++;
+			}
 
-		LineNumber++;
+			LineNumber++;
+		}
+		quiz.close();
+		break;
 	}
-	quiz.close();
+	case 2:
+	{
+		while (std::getline(quiz2, line))
+		{
+			switch (LineNumber) //LineNumber=1;
+			{
+			case 1: bText[QuestionNo] = line; break;
+			case 2: bChoiceA[QuestionNo] = line; break;
+			case 3: bChoiceB[QuestionNo] = line; break;
+			case 4: bChoiceC[QuestionNo] = line; break;
+			case 5: bChoiceD[QuestionNo] = line; break;
+			case 6: bCorrectAnswer[QuestionNo] = line; break;
+			}
+			if (LineNumber == 6)
+			{
+				LineNumber = 0;
+				QuestionNo++;
+			}
+
+			LineNumber++;
+		}
+		quiz2.close();
+		break;
+	}
+	}
 }
 
 void Questions::AskSingleQuestions()
 {
 	srand(time(NULL));
-	RandomNumber = std::rand() % AmountOfQuestions + 1;
-	std::cout << Text[RandomNumber] << std::endl;
-	std::cout << "A) " << ChoiceA[RandomNumber] << std::endl;
-	std::cout << "B) " << ChoiceB[RandomNumber] << std::endl;
-	std::cout << "C) " << ChoiceC[RandomNumber] << std::endl;
-	std::cout << "D) " << ChoiceD[RandomNumber] << std::endl;
-
-	std::cout << "Choice: ";
-	std::cin >> Answer;
-
-	if (Answer == CorrectAnswer[RandomNumber])
+	switch (Choice)
 	{
-		std::cout << "\n";
-		std::cout << "Correct Answer!" << std::endl;
-		std::cin.get();
-		std::cin.ignore();
-		system("CLS");
+	case 1:
+	{
+		RandomNumber = std::rand() % AmountOfQuestionsA + 1;
+		std::cout << aText[RandomNumber] << std::endl;
+		std::cout << "A) " << aChoiceA[RandomNumber] << std::endl;
+		std::cout << "B) " << aChoiceB[RandomNumber] << std::endl;
+		std::cout << "C) " << aChoiceC[RandomNumber] << std::endl;
+		std::cout << "D) " << aChoiceD[RandomNumber] << std::endl;
+
+		std::cout << "Choice: ";
+		std::cin >> Answer;
+
+		if (Answer == aCorrectAnswer[RandomNumber])
+		{
+			std::cout << "\n";
+			std::cout << "Correct Answer!" << std::endl;
+			std::cin.get();
+			std::cin.ignore();
+			system("CLS");
+		}
+
+		else
+		{
+			std::cout << "\n";
+			std::cout << "Sorry, you're wrong..." << "\n";
+			std::cout << "The correct answer is " << aCorrectAnswer[RandomNumber] << "." << "\n";
+			std::cout << "\n";
+			std::cout << "Press enter to continue." << "\n";
+			std::cin.get();
+			std::cin.ignore();
+			system("CLS");
+		}
+			break;
 	}
-
-	else
+	case 2:
 	{
-		std::cout << "\n";
-		std::cout << "Sorry, you're wrong..." << "\n";
-		std::cout << "The correct answer is " << CorrectAnswer[RandomNumber] << "." << "\n";
-		std::cout << "\n";
-		std::cout << "Press enter to continue." << "\n";
-		std::cin.get();
-		std::cin.ignore();
-		system("CLS");
+		RandomNumber = std::rand() % AmountOfQuestionsB + 1;
+		std::cout << bText[RandomNumber] << std::endl;
+		std::cout << "A) " << bChoiceA[RandomNumber] << std::endl;
+		std::cout << "B) " << bChoiceB[RandomNumber] << std::endl;
+		std::cout << "C) " << bChoiceC[RandomNumber] << std::endl;
+		std::cout << "D) " << bChoiceD[RandomNumber] << std::endl;
+
+		std::cout << "Choice: ";
+		std::cin >> Answer;
+
+		if (Answer == bCorrectAnswer[RandomNumber])
+		{
+			std::cout << "\n";
+			std::cout << "Correct Answer!" << std::endl;
+			std::cin.get();
+			std::cin.ignore();
+			system("CLS");
+		}
+
+		else
+		{
+			std::cout << "\n";
+			std::cout << "Sorry, you're wrong..." << "\n";
+			std::cout << "The correct answer is " << bCorrectAnswer[RandomNumber] << "." << "\n";
+			std::cout << "\n";
+			std::cout << "Press enter to continue." << "\n";
+			std::cin.get();
+			std::cin.ignore();
+			system("CLS");
+		}
+		break;
+	}
 	}
 }
 
@@ -87,41 +186,95 @@ void Questions::AskWholeTest()
 	int Amount;
 	std::cin >> Amount;
 	system("CLS");
-
-	for (int i = 0; i <= Amount-1; i++)
+	switch (Choice)
 	{
-		srand(time(NULL));
-		RandomNumber = std::rand() % AmountOfQuestions + 1;
-		std::cout << Text[RandomNumber] << std::endl;
-		std::cout << "A) " << ChoiceA[RandomNumber] << std::endl;
-		std::cout << "B) " << ChoiceB[RandomNumber] << std::endl;
-		std::cout << "C) " << ChoiceC[RandomNumber] << std::endl;
-		std::cout << "D) " << ChoiceD[RandomNumber] << std::endl;
-
-		std::cout << "Choice: ";
-		std::cin >> Answer;
-
-		if (Answer == CorrectAnswer[RandomNumber])
+	case 1:
+	{
+		for (int i = 0; i <= Amount - 1; i++)
 		{
-			Score += 1;
-			std::cout << "Press enter to continue." << std::endl;
-			std::cin.get();
-			std::cin.ignore();
-			system("CLS");
-		}
+			srand(time(NULL));
+			RandomNumber = std::rand() % AmountOfQuestionsA + 1;
+			std::cout << aText[RandomNumber] << std::endl;
+			std::cout << "A) " << aChoiceA[RandomNumber] << std::endl;
+			std::cout << "B) " << aChoiceB[RandomNumber] << std::endl;
+			std::cout << "C) " << aChoiceC[RandomNumber] << std::endl;
+			std::cout << "D) " << aChoiceD[RandomNumber] << std::endl;
 
-		else
-		{
-			std::cout << "Press enter to continue." << std::endl;
-			std::cin.get();
-			std::cin.ignore();
-			system("CLS");
+			std::cout << "Choice: ";
+			std::cin >> Answer;
+
+			if (Answer == aCorrectAnswer[RandomNumber])
+			{
+				Score += 1;
+				std::cout << "Good answer!" << std::endl;
+				std::cout << "Press enter to continue." << std::endl;
+				std::cin.get();
+				std::cin.ignore();
+				system("CLS");
+			}
+
+			else
+			{
+				std::cout << "\n";
+				std::cout << "Sorry, you're wrong..." << "\n";
+				std::cout << "The correct answer is " << aCorrectAnswer[RandomNumber] << "." << "\n";
+				std::cout << "\n";
+				std::cout << "Press enter to continue." << std::endl;
+				std::cin.get();
+				std::cin.ignore();
+				system("CLS");
+			}
 		}
+		std::cout << "Your Total Score is " << Score << " out of " << Amount << "!" << std::endl;
+		std::cout << "Its exactly: " << (Score * 100) / Amount << "%." << std::endl;
+		std::cin.get();
+		std::cin.get();
+		break;
 	}
-	std::cout << "Your Total Score is " << Score << " out of "<< Amount << "!" << std::endl;
-	std::cout << "Its exactly: " << (Score * 100) / Amount << " percentage" << std::endl;
-	std::cin.get();
-	std::cin.get();
+	case 2:
+	{
+		for (int i = 0; i <= Amount - 1; i++)
+		{
+			srand(time(NULL));
+			RandomNumber = std::rand() % AmountOfQuestionsB + 1;
+			std::cout << bText[RandomNumber] << std::endl;
+			std::cout << "A) " << bChoiceA[RandomNumber] << std::endl;
+			std::cout << "B) " << bChoiceB[RandomNumber] << std::endl;
+			std::cout << "C) " << bChoiceC[RandomNumber] << std::endl;
+			std::cout << "D) " << bChoiceD[RandomNumber] << std::endl;
+
+			std::cout << "Choice: ";
+			std::cin >> Answer;
+
+			if (Answer == bCorrectAnswer[RandomNumber])
+			{
+				Score += 1;
+				std::cout << "Good answer!" << std::endl;
+				std::cout << "Press enter to continue." << std::endl;
+				std::cin.get();
+				std::cin.ignore();
+				system("CLS");
+			}
+
+			else
+			{
+				std::cout << "\n";
+				std::cout << "Sorry, you're wrong..." << "\n";
+				std::cout << "The correct answer is " << bCorrectAnswer[RandomNumber] << "." << "\n";
+				std::cout << "\n";
+				std::cout << "Press enter to continue." << std::endl;
+				std::cin.get();
+				std::cin.ignore();
+				system("CLS");
+			}
+		}
+		std::cout << "Your Total Score is " << Score << " out of " << Amount << "!" << std::endl;
+		std::cout << "Its exactly: " << (Score * 100) / Amount << "%." << std::endl;
+		std::cin.get();
+		std::cin.get();
+		break;
+	}
+	}
 }
 
 void Questions::ChooseTest()
@@ -139,7 +292,7 @@ void Questions::ChooseTest()
 	{
 	case 1: 
 		{
-		while (!GetAsyncKeyState == VK_DELETE)
+		while (true)
 			{
 				AskSingleQuestions();
 			}
