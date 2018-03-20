@@ -9,12 +9,12 @@ public:
 	~Questions();
 
 
-protected:	
-	std::fstream quiz;
+protected:
+	std::fstream Quiz;
 
 protected:
 	int LineNumber = 1;
-	int QuestionNo = 0;
+	int QuestionNo = 0; //Question Number
 	int static const AmountOfQuestions = 188;
 	int RandomNumber;
 	int Score;
@@ -27,7 +27,7 @@ protected:
 	std::string ChoiceD[AmountOfQuestions];
 	std::string CorrectAnswer[AmountOfQuestions];
 	std::string Answer;
-	std::string line;
+	std::string Line;
 
 public:
 	void OpenFile();
@@ -39,4 +39,3 @@ public:
 
 
 };
-
