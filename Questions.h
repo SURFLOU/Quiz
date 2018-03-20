@@ -37,5 +37,4 @@ public:
 	void AskWholeTest();
 
 
-
 };
