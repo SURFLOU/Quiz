@@ -12,28 +12,29 @@ Questions::Questions()
 
 void Questions::OpenFile()
 {
-	quiz.open("quiz.txt", std::ios::in);
-	if (quiz.good() == false)
+	Quiz.open("quiz.txt", std::ios::in);
+	if (Quiz.good() == false)
 	{
 		std::cout << "Failed to load file";
-		Sleep(2000);
+		std::cin.get();
+		std::cin.get();
 		exit(0);
 	}
-	
+
 }
 
 void Questions::AssignVariables()
 {
-	while (std::getline(quiz, line))
+	while (std::getline(Quiz, Line))
 	{
 		switch (LineNumber) //LineNumber=1;
 		{
-		case 1: Text[QuestionNo] = line; break;
-		case 2: ChoiceA[QuestionNo] = line; break;
-		case 3: ChoiceB[QuestionNo] = line; break;
-		case 4: ChoiceC[QuestionNo] = line; break;
-		case 5: ChoiceD[QuestionNo] = line; break;
-		case 6: CorrectAnswer[QuestionNo] = line; break;
+		case 1: Text[QuestionNo] = Line; break;
+		case 2: ChoiceA[QuestionNo] = Line; break;
+		case 3: ChoiceB[QuestionNo] = Line; break;
+		case 4: ChoiceC[QuestionNo] = Line; break;
+		case 5: ChoiceD[QuestionNo] = Line; break;
+		case 6: CorrectAnswer[QuestionNo] = Line; break;
 		}
 		if (LineNumber == 6)
 		{
@@ -43,13 +44,13 @@ void Questions::AssignVariables()
 
 		LineNumber++;
 	}
-	quiz.close();
+	Quiz.close();
 }
 
 void Questions::AskSingleQuestions()
 {
 	srand(time(NULL));
-	RandomNumber = std::rand() % AmountOfQuestions + 1;
+	RandomNumber = rand() % AmountOfQuestions + 1;
 	std::cout << Text[RandomNumber] << std::endl;
 	std::cout << "A) " << ChoiceA[RandomNumber] << std::endl;
 	std::cout << "B) " << ChoiceB[RandomNumber] << std::endl;
@@ -88,10 +89,10 @@ void Questions::AskWholeTest()
 	std::cin >> Amount;
 	system("CLS");
 
-	for (int i = 0; i <= Amount-1; i++)
+	for (int i = 0; i <= Amount - 1; i++)
 	{
 		srand(time(NULL));
-		RandomNumber = std::rand() % AmountOfQuestions + 1;
+		RandomNumber = rand() % AmountOfQuestions + 1;
 		std::cout << Text[RandomNumber] << std::endl;
 		std::cout << "A) " << ChoiceA[RandomNumber] << std::endl;
 		std::cout << "B) " << ChoiceB[RandomNumber] << std::endl;
@@ -118,7 +119,7 @@ void Questions::AskWholeTest()
 			system("CLS");
 		}
 	}
-	std::cout << "Your Total Score is " << Score << " out of "<< Amount << "!" << std::endl;
+	std::cout << "Your Total Score is " << Score << " out of " << Amount << "!" << std::endl;
 	std::cout << "Its exactly: " << (Score * 100) / Amount << " percentage" << std::endl;
 	std::cin.get();
 	std::cin.get();
@@ -131,25 +132,25 @@ void Questions::ChooseTest()
 	std::cout << "2. whole test" << std::endl;
 	std::cout << "Choice: ";
 
-	int choice;
-	std::cin >> choice;
+	int Choice;
+	std::cin >> Choice;
 	system("CLS");
 
-	switch (choice)
+	switch (Choice)
 	{
-	case 1: 
+	case 1:
+	{
+		while (true)
 		{
-		while (!GetAsyncKeyState == VK_DELETE)
-			{
-				AskSingleQuestions();
-			}
-				break;
+			AskSingleQuestions();
 		}
+		break;
+	}
 	case 2:
-		{
-			AskWholeTest();
-			break;
-		}
+	{
+		AskWholeTest();
+		break;
+	}
 	}
 }
 
