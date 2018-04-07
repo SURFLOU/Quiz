@@ -1,5 +1,7 @@
 #pragma once
 #include <fstream>
+#include <vector>
+#include "random.hpp"
 
 
 class Questions
@@ -13,21 +15,30 @@ protected:
 	std::fstream Quiz;
 
 protected:
+	struct AmountOfQuestions
+	{
+		std::string Text;
+		std::string ChoiceA;
+		std::string ChoiceB;
+		std::string ChoiceC;
+		std::string ChoiceD;
+		std::string CorrectAnswer;
+	};
+
+protected:
 	int LineNumber = 1;
 	int QuestionNo = 0; //Question Number
-	int static const AmountOfQuestions = 188;
-	int RandomNumber;
 	int Score;
 
 protected:
-	std::string Text[AmountOfQuestions];
-	std::string ChoiceA[AmountOfQuestions];
-	std::string ChoiceB[AmountOfQuestions];
-	std::string ChoiceC[AmountOfQuestions];
-	std::string ChoiceD[AmountOfQuestions];
-	std::string CorrectAnswer[AmountOfQuestions];
+	std::vector<AmountOfQuestions> Array;
+
+protected:
 	std::string Answer;
 	std::string Line;
+
+protected:
+	using Random = effolkronium::random_static;
 
 public:
 	void OpenFile();
@@ -35,6 +46,8 @@ public:
 	void ChooseTest();
 	void AskSingleQuestions();
 	void AskWholeTest();
+
+
 
 
 };
