@@ -96,17 +96,17 @@ Nie ma prawidlowej odpowiedzi
 a
 Ktore z ponizszych zdan nie charakteryzuje pliku?
 Plik to zapisany w pamieci masowej komputera zbior danych o okreslonym rozmiarze i stanowiacym logiczna calosc
-Ka¿dy plik musi mieæ niepowtarzaln¹ nazwê w danym komputerze
+KaÅ¼dy plik musi mieÄ‡ niepowtarzalnÅ¡ nazwÄ™ w danym komputerze
 Plikiem jest zarowno dokument tekstowy jak i graficzny
 Nie ma prawidlowej odpowiedzi
 b
-Ktore z ponizszych zdañ nie charakteryzuje folderu?
+Ktore z ponizszych zdaÅ„ nie charakteryzuje folderu?
 Folder mozemy inaczej nazywac katalogiem
 Folder to pewien logiczny obiekt ulatwiajacy organizacje plikow na nosnikach pamieci
 Folder moze zawierac tylko pliki
 Nie ma prawidlowej odpowiedzi
 c
-Ktore z ponizszych zdañ nie charakteryzuje folderu?
+Ktore z ponizszych zdaÅ„ nie charakteryzuje folderu?
 Folder mozemy inaczej nazywac katalogiem
 Folder to pewien logiczny obiekt ulatwiajacy organizacje plikow na nosnikach pamieci
 Folder moze zawierac tylko pliki
@@ -293,10 +293,10 @@ chipset
 karta graficzna
 b
 Co zostanie wywietlone w komorce do ktorej wpisano nastepujaca formule: =SUMA13710
-blad – nie podano komorek do zsumowania
+blad Â– nie podano komorek do zsumowania
 4
 21
-blad – bledny zakres
+blad Â– bledny zakres
 c
 Urzadzenie sluzace do zapisu i odczytu danych wykorzystujace nonik magnetyczny to:
 pamiec SDRAM
@@ -550,7 +550,7 @@ DOC
 TXT
 DNG
 d
-Co oznacza pojecie „szeryf” w odniesieniu do kroju liter?
+Co oznacza pojecie Â„szeryfÂ” w odniesieniu do kroju liter?
 Szeryf to poprzeczne lub ukosne zakonczenia kresek glownych liter
 Szeryf to ozdobny ornament wokol liter w krojach pisma o stalej szerokosci
 Szeryf to krotkie kreski stosowane w wielu krojach pisma do zwiekszenia czytelnosci
@@ -683,10 +683,10 @@ SATA
 ATA
 a
 Wybierz prawidlowe wywolanie funkcji LICZJEZELI:
-=LICZJEZELIB2:B16”<>konkurs”
-=LICZJEZELIA3:A8”<>konkurs”
-LICZJEZELIC1:C4”konkurs or test”
-=LICZJEZELID5:D59”konkurs or test”
+=LICZJEZELIB2:B16Â”<>konkursÂ”
+=LICZJEZELIA3:A8Â”<>konkursÂ”
+LICZJEZELIC1:C4Â”konkurs or testÂ”
+=LICZJEZELID5:D59Â”konkurs or testÂ”
 a
 Interfejs USB w komputerze
 przesyla dane rownolegle - wszystkie bity jednego bajtu na raz
@@ -940,7 +940,7 @@ jest poprzednikiem stosowanego obecnie IP wersji 8
 pozwala na wyjatkowo szybka transmisje dzwieku w telefonach komorkowych i tylko dzwieku
 pozwala zaadresowac znacznie wieksza liczbe urzadzen niz IP w wersji 4
 d
-Na ponizszym rysunku przedstawiono schemat blokowy algorytmu obliczania funkcji silnia n! gdzie\nn! = 1 · 2 · 3 ·  · n-1 · n silnia jest to iloczyn kolejnych liczb naturalnych mniejszych badz rownych\nn Co powinno byc wpisane w pusty element schematu?
+Na ponizszym rysunku przedstawiono schemat blokowy algorytmu obliczania funkcji silnia n! gdzie\nn! = 1 Ë‡ 2 Ë‡ 3 Ë‡  Ë‡ n-1 Ë‡ n silnia jest to iloczyn kolejnych liczb naturalnych mniejszych badz rownych\nn Co powinno byc wpisane w pusty element schematu?
 dobra odp
 zla odp
 dobra odp to a
