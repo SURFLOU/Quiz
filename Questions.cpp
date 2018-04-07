@@ -2,12 +2,11 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <time.h>
 #include <windows.h>
+#include "random.hpp"
 
 Questions::Questions()
 {
-
 }
 
 void Questions::OpenFile()
@@ -25,21 +24,24 @@ void Questions::OpenFile()
 
 void Questions::AssignVariables()
 {
+	Array.push_back(AmountOfQuestions());
+	int i = 0;
 	while (std::getline(Quiz, Line))
 	{
 		switch (LineNumber) //LineNumber=1;
 		{
-		case 1: Text[QuestionNo] = Line; break;
-		case 2: ChoiceA[QuestionNo] = Line; break;
-		case 3: ChoiceB[QuestionNo] = Line; break;
-		case 4: ChoiceC[QuestionNo] = Line; break;
-		case 5: ChoiceD[QuestionNo] = Line; break;
-		case 6: CorrectAnswer[QuestionNo] = Line; break;
+		case 1: Array[i].Text = Line; break;
+		case 2: Array[i].ChoiceA = Line; break;
+		case 3: Array[i].ChoiceB = Line; break;
+		case 4: Array[i].ChoiceC = Line; break;
+		case 5: Array[i].ChoiceD = Line; break;
+		case 6: Array[i].CorrectAnswer = Line; break;
 		}
 		if (LineNumber == 6)
 		{
+			i++;
+			Array.push_back(AmountOfQuestions());
 			LineNumber = 0;
-			QuestionNo++;
 		}
 
 		LineNumber++;
@@ -49,18 +51,17 @@ void Questions::AssignVariables()
 
 void Questions::AskSingleQuestions()
 {
-	srand(time(NULL));
-	RandomNumber = rand() % AmountOfQuestions + 1;
-	std::cout << Text[RandomNumber] << std::endl;
-	std::cout << "A) " << ChoiceA[RandomNumber] << std::endl;
-	std::cout << "B) " << ChoiceB[RandomNumber] << std::endl;
-	std::cout << "C) " << ChoiceC[RandomNumber] << std::endl;
-	std::cout << "D) " << ChoiceD[RandomNumber] << std::endl;
+	auto RandomNumber = Random::get<int>(1, Array.size());
+	std::cout << Array[RandomNumber].Text << std::endl;
+	std::cout << "A) " << Array[RandomNumber].ChoiceA << std::endl;
+	std::cout << "B) " << Array[RandomNumber].ChoiceB << std::endl;
+	std::cout << "C) " << Array[RandomNumber].ChoiceC << std::endl;
+	std::cout << "D) " << Array[RandomNumber].ChoiceD << std::endl;
 
 	std::cout << "Choice: ";
 	std::cin >> Answer;
 
-	if (Answer == CorrectAnswer[RandomNumber])
+	if (Answer == Array[RandomNumber].CorrectAnswer)
 	{
 		std::cout << "\n";
 		std::cout << "Correct Answer!" << std::endl;
@@ -73,7 +74,7 @@ void Questions::AskSingleQuestions()
 	{
 		std::cout << "\n";
 		std::cout << "Sorry, you're wrong..." << "\n";
-		std::cout << "The correct answer is " << CorrectAnswer[RandomNumber] << "." << "\n";
+		std::cout << "The correct answer is " << Array[RandomNumber].CorrectAnswer << "." << "\n";
 		std::cout << "\n";
 		std::cout << "Press enter to continue." << "\n";
 		std::cin.get();
@@ -91,18 +92,17 @@ void Questions::AskWholeTest()
 
 	for (int i = 0; i <= Amount - 1; i++)
 	{
-		srand(time(NULL));
-		RandomNumber = rand() % AmountOfQuestions + 1;
-		std::cout << Text[RandomNumber] << std::endl;
-		std::cout << "A) " << ChoiceA[RandomNumber] << std::endl;
-		std::cout << "B) " << ChoiceB[RandomNumber] << std::endl;
-		std::cout << "C) " << ChoiceC[RandomNumber] << std::endl;
-		std::cout << "D) " << ChoiceD[RandomNumber] << std::endl;
+		auto RandomNumber = Random::get<int>(1, Array.size());
+		std::cout << Array[RandomNumber].Text << std::endl;
+		std::cout << "A) " << Array[RandomNumber].ChoiceA << std::endl;
+		std::cout << "B) " << Array[RandomNumber].ChoiceB << std::endl;
+		std::cout << "C) " << Array[RandomNumber].ChoiceC << std::endl;
+		std::cout << "D) " << Array[RandomNumber].ChoiceD << std::endl;
 
 		std::cout << "Choice: ";
 		std::cin >> Answer;
 
-		if (Answer == CorrectAnswer[RandomNumber])
+		if (Answer == Array[RandomNumber].CorrectAnswer)
 		{
 			Score += 1;
 			std::cout << "Press enter to continue." << std::endl;
